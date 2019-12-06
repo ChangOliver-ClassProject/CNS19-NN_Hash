@@ -32,8 +32,8 @@ def toggle_message(m):
 def find_collision(m, block_size):
 	
 	toggle_message(m)
-	os.system("python refresh.py 16 {}".format(block_size))
-	os.system("python hashing.py test.txt 16 {}".format(block_size))
+	os.system("python ../Model/refresh.py 16 {}".format(block_size))
+	os.system("python ../Model/hashing.py test.txt 16 {}".format(block_size))
 
 	read_file = open("output.txt", "r")
 
